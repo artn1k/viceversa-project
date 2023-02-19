@@ -5,9 +5,14 @@
 </style>
 <h1>Vice Versa</h1>
 
-<form>
-<textarea id="w3review" name="w3review" rows="15" cols="50"></textarea>
-<br>
-<input type="submit" value="Reverse!">
+<form action="{% url 'reverse' %}">
+
+	<textarea id="w3review" name="usertext" rows="15" cols="50"></textarea>
+
+	<br>
+	<p></p>
+	<input type="submit" value="Reverse!">
+	<p></p>
+
 </form>
 
